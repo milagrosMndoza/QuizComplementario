@@ -1,5 +1,5 @@
 //Ejercicio 1:
-function inverso_numero(n){
+function capicua_numero(n){
 var n = 0;
 var diferente = 0;
 n = prompt("Digite um numero : ");
@@ -18,7 +18,7 @@ if(diferente == 0){
   document.writeln(" * El número digitado no es Capicua!");
  }
 }
-inverso_numero();
+capicua_numero();
 
 //Ejercicio 2:
 function potencia(n, m){
@@ -107,10 +107,10 @@ function palabraLarga2(cadena) {
  function invertir(cadena) {
   cadena = prompt("Ingrese palabra a invertir");
   var x = cadena.length; 
-  var str = "";
+  var alreves = "";
  
   while (x>=0) {
-    str = str + cadena.charAt(x);
+    alreves = alreves + cadena.charAt(x);
     x--;
   }
    document.writeln("La palabra al reves es: "+str);
@@ -119,8 +119,20 @@ invertir();
 
 //Ejercicio 10:
 function figura(n){
-	
+var dibujo = ""
+for(var i =0; i<n ; i++){
+	dibujo+="_";
 }
+ return dibujo;
+}
+function figura2(n){
+  var dibujo2 = ""
+for(var j =0; j<n ; j++){
+	dibujo2+= "'";
+}
+ return dibujo2;
+}
+console.log(figura(4)+"/"+figura2(4) + "\\" + figura(3)+"/"+figura2(3) + "\\"+figura(2)+"/"+figura2(2)+ "\\" +figura(1)+"/"+figura2(1)+ "\\")
 
 
 
